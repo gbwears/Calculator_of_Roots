@@ -8,9 +8,10 @@ df.head()
 
 
 #train data destribution
-plt.scatter(train.X1 transaction date,train.Y house price of unit area,color='blue')
+plt.scatter(train.X1['transaction date'],train.Y]'house price of unit area'],color='blue', marker='*')
 plt.xlabel("X1 transaction date")
 plt.ylabel("Y house price of unit area")
+plt.title('House Prices')
 plt.show()
 
 #Modeling
@@ -22,7 +23,7 @@ train_y = np.asanarray(train[['Y house price of unit area']])
 regr.fit(train_x,train_y)
 
 #Plot output
-plt.scatter(train.X1 transaction date,train.Y house price of unit area,color='blue')
+plt.scatter(train.X1['transaction date'],train.Y['house price of unit area'],color='blue')
 plt.xlabel("X1 transaction date")
 plt.ylabel("Y house price of unit area")
 plt.show()
